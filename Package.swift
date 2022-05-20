@@ -12,6 +12,7 @@ let package = Package(
             name: "BibleProject-Firebase-Binaries",
             targets: [
                 "abseil",
+                "AppAuth",
                 "BoringSSL-GRPC",
                 "FirebaseABTesting",
                 "FirebaseAnalytics",
@@ -30,9 +31,11 @@ let package = Package(
                 "GoogleAppMeasurement",
                 "GoogleAppMeasurementIdentitySupport",
                 "GoogleDataTransport",
+                "GoogleSignIn",
                 "GoogleUtilities",
                 "gRPC-C++",
                 "gRPC-Core",
+                "GTMAppAuth",
                 "GTMSessionFetcher",
                 "leveldb-library",
                 "Libuv-gRPC",
@@ -45,6 +48,10 @@ let package = Package(
         .binaryTarget(
             name: "abseil",
             path: "abseil.xcframework"
+        ),
+        .binaryTarget(
+            name: "AppAuth",
+            path: "AppAuth.xcframework"
         ),
         .binaryTarget(
             name: "BoringSSL-GRPC",
@@ -119,6 +126,10 @@ let package = Package(
             path: "GoogleDataTransport.xcframework"
         ),
         .binaryTarget(
+            name: "GoogleSignIn",
+            path: "GoogleSignIn.xcframework"
+        ),
+        .binaryTarget(
             name: "GoogleUtilities",
             path: "GoogleUtilities.xcframework"
         ),
@@ -129,6 +140,10 @@ let package = Package(
         .binaryTarget(
             name: "gRPC-Core",
             path: "gRPC-Core.xcframework"
+        ),
+        .binaryTarget(
+            name: "GTMAppAuth",
+            path: "GTMAppAuth.xcframework"
         ),
         .binaryTarget(
             name: "GTMSessionFetcher",
