@@ -15,13 +15,18 @@ let package = Package(
                 "BoringSSL-GRPC",
                 "FirebaseABTesting",
                 "FirebaseAnalytics",
+                "FirebaseAnalyticsSwift",
                 "FirebaseAuth",
                 "FirebaseCore",
                 "FirebaseCoreDiagnostics",
+                "FirebaseCoreInternal",
                 "FirebaseFirestore",
+                "FirebaseFirestoreSwift",
                 "FirebaseInstallations",
                 "FirebaseMessaging",
                 "FirebaseRemoteConfig",
+                "FirebaseRemoteConfigSwift",
+                "FirebaseSharedSwift",
                 "GoogleAppMeasurement",
                 "GoogleAppMeasurementIdentitySupport",
                 "GoogleDataTransport",
@@ -54,6 +59,10 @@ let package = Package(
             path: "FirebaseAnalytics.xcframework"
         ),
         .binaryTarget(
+            name: "FirebaseAnalyticsSwift",
+            path: "FirebaseAnalyticsSwift.xcframework"
+        ),
+        .binaryTarget(
             name: "FirebaseAuth",
             path: "FirebaseAuth.xcframework"
         ),
@@ -66,8 +75,16 @@ let package = Package(
             path: "FirebaseCoreDiagnostics.xcframework"
         ),
         .binaryTarget(
+            name: "FirebaseCoreInternal",
+            path: "FirebaseCoreInternal.xcframework"
+        ),
+        .binaryTarget(
             name: "FirebaseFirestore",
             path: "FirebaseFirestore.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseFirestoreSwift",
+            path: "FirebaseFirestoreSwift.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseInstallations",
@@ -80,6 +97,14 @@ let package = Package(
         .binaryTarget(
             name: "FirebaseRemoteConfig",
             path: "FirebaseRemoteConfig.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseRemoteConfigSwift",
+            path: "FirebaseRemoteConfigSwift.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseSharedSwift",
+            path: "FirebaseSharedSwift.xcframework"
         ),
         .binaryTarget(
             name: "GoogleAppMeasurement",
